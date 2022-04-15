@@ -44,7 +44,8 @@
       "executor": "@nrwl/web:dev-server",
       "options": {
         "buildTarget": "bookstore:build",
-        "hmr": true
+        "hmr": true,
+        "proxyConfig": "apps/bookstore/proxy.conf.json"
       },
       "configurations": {
         "production": {

@@ -1,4 +1,4 @@
-import { Link, Redirect, Route } from 'react-router-dom';
+import { Link, Redirect, Route, BrowserRouter as Router } from 'react-router-dom';
 
 import { BooksFeature } from '@acme/books/feature';
 
@@ -12,7 +12,7 @@ import {
 
 export const App = () => {
   return (
-    <>
+    <Router>
       <GlobalStyles />
       <Header>
         <h1>Bookstore</h1>
@@ -26,7 +26,7 @@ export const App = () => {
         <Route path="/books" component={BooksFeature} />
         <Route exact path="/" render={() => <Redirect to="/books" />} />
       </Main>
-    </>  
+    </Router>  
   );
 };
 

@@ -1,12 +1,12 @@
+import { IBook } from '@acme/shared-models';
 import { useEffect, useState } from 'react';
-import styled from 'styled-components';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { getBooks } from '@acme/books/data-access';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { Books } from '@acme/books/ui';
 
 export const BooksFeature = () => {
-  const [books, setBooks] = useState<any[]>([]);
+  const [books, setBooks] = useState<IBook[]>([]);
 
   useEffect(() => {
     getBooks().then(setBooks);

@@ -7,6 +7,7 @@
     "books-ui": "libs/books/ui",
     "bookstore": "apps/bookstore",
     "bookstore-e2e": "apps/bookstore-e2e",
+    "shared-models": "libs/shared-models",
     "ui": "libs/ui"
   }
 }

@@ -1,10 +1,11 @@
+import { IBook } from '@acme/shared-models';
 import styled from 'styled-components';
 import { Book } from '../book/book';
 
 /* eslint-disable-next-line */
 export interface BooksProps {
-  books: any[];
-  onAdd: (book: any) => void;
+  books: IBook[];
+  onAdd: (book: IBook) => void;
 }
 
 const StyledBooks = styled.div`

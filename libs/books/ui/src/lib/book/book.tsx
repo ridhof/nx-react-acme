@@ -1,10 +1,12 @@
 import styled from 'styled-components';
+// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
 import { Button } from '@acme/ui';
+import { IBook } from '@acme/shared-models';
 
 /* eslint-disable-next-line */
 export interface BookProps {
-  book: any;
-  onAdd: (book: any) => void;
+  book: IBook;
+  onAdd: (book: IBook) => void;
 }
 
 const StyledBook = styled.div`
